@@ -1,0 +1,21 @@
+{
+  "name": "tp_sql_groupe_elearning",
+  "version": "1.0.0",
+  "description": "Projet Node/Express avec SQL",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.4",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "author": "Thomas",
+  "license": "ISC"
+}
