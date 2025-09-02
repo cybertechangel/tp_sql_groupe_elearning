@@ -1,9 +1,12 @@
 {
   "name": "tp_sql_groupe_elearning",
   "version": "1.0.0",
+  "type": "module",
   "description": "tp_sql_groupe_elearning/ │ ├── backend/ │   ├── config/ │   │   └── db.js              # Connexion à MySQL │   │ │   ├── models/                # Modèles qui représentent les tables │   │   ├── User.js │   │   ├── Course.js │   │   ├── Enrollment.js │   │   └── Review.js │   │ │   ├── controllers/           # Logique métier │   │   ├── userController.js │   │   ├── courseController.js │   │   ├── enrollmentController.js │   │   └── reviewController.js │   │ │   ├── routes/                # Routes API │   │   ├── userRoutes.js │   │   ├── courseRoutes.js │   │   ├── enrollmentRoutes.js │   │   └── reviewRoutes.js │   │ │   ├── middleware/            # Middleware (auth, validation, etc.) │   │   └── authMiddleware.js │   │ │   │ │   ├── app.js                 # Point d'entrée Express │   └── .env                   # Variables d'environnement (DB, PORT…) │ ├── sql/ │   └── schema.sql             │ ├── package.json └── README.md",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +21,11 @@
   },
   "homepage": "https://github.com/cybertechangel/tp_sql_groupe_elearning#readme",
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "mysql2": "^3.14.4"
+    "mysql2": "^3.14.4",
+    "sequelize": "^6.37.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
